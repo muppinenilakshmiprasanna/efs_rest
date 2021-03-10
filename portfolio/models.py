@@ -10,7 +10,7 @@ class Customer(models.Model):
     state = models.CharField(max_length=50)
     zipcode = models.CharField(max_length=10)
     email = models.EmailField(max_length=200)
-    cell_phone = models.CharField(max_length=50)
+    cell_phone =models.CharField(max_length=50)
     created_date = models.DateTimeField(
         default=timezone.now)
     updated_date = models.DateTimeField(auto_now_add=True)
